@@ -1,16 +1,66 @@
-.list {
+* {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  box-sizing: border-box;
+}
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid red;
+  margin: 0 auto;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+img{
+  display: block;
+}
+address {
+  font-size: normal;
+}
+.list-container {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  gap: 24px;
+  border: none;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 .link {
   text-decoration: none;
 }
 :root {
   --accent-color: #4d5ae5;
-  --text-color: #2E2F42;
+  --text-color: #2e2f42;
 }
 body {
   font-family: "Roboto", "sans-serif";
-  
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.container-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo {
   font-family: "Raleway", "sans-serif";
@@ -18,6 +68,10 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-right: 77px;
+  margin-right: auto;
 }
 .logo-web {
   font-family: "Raleway", "sans-serif";
@@ -33,11 +87,18 @@ body {
   font-size: 18px;
   line-height: 1.33;
   color: var(--text-color);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.menu {
+  display: flex;
+  gap: 40px;
 }
 .contact-list-link {
   list-style: none;
   text-decoration: none;
   color: #434455;
+  margin-right: 40px;
 }
 .navigation {
   font-weight: 600;
@@ -45,53 +106,91 @@ body {
   line-height: 1.5;
   color: var(--text-color);
   letter-spacing: 0.02em;
+  margin-right: auto;
 }
 .link:hover,
 .link:focus {
   color: #4d5ae5;
 }
-.navigation list link{
-    color: var(--text-color);
+.navigation list link {
+  color: var(--text-color);
 }
-.name-hero {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 56px;
-  line-height: 1.07;
-  background: #2e2f42;
-}
+.background {
+  background: #2E2F42;
+  padding-top: 192px;
+  padding-bottom: 192px;
+  }
+
+
+  
+  .name-hero {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+    width: 492px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+  } 
+ 
 .hero-btn {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-family: "Roboto";
   font-weight: 600;
-  color: #ffffff;
+  color: #FFFFFF;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.19;
+  min-width: 170px;
+  height: 51px;
+  border-radius: 4px;
+  offset: 0px, 4px;
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border: none;
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   background: #404bbf;
   color: #ffffff;
 }
-.main-name-section{
-    font-size: 36px;
-    color: var(--text-color); 
-    line-height: 1.11;
+.adge {
+  padding-top: 120px;
+  display: flex;
+  gap: 24px;
+}
+.main-name-section {
+  font-size: 36px;
+  color: var(--text-color);
+  line-height: 1.11;
+  padding-top: 120px;
+  padding-bottom: 72px;
+  text-align: center;
+}
+.main-name-container {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
 }
 .main-name {
   color: var(--text-color);
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
+  padding-top: 32px;
+  padding-bottom: 8px;
+
+  /* padding-top: 120px;*/
 }
 .main-text {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
+  padding-bottom: 32px;
 }
 
 .name-block {
@@ -103,8 +202,17 @@ body {
 .name-block-color {
   background: #f4f4fd;
 }
+/*.list{
+  display: flex;
+  gap: 24px;
+}*/
 .footer {
   background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.logo-footer {
+  padding-left: 156px;
 }
 .studio-footer {
   font-family: "Raleway", "sans-serif";
@@ -119,6 +227,12 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 16px;
+}
+.footer-text-container {
+  width: 264px;
+  margin-left: 156px;
+  outline: 1px solid red;
 }
 /*======================PORTFOLIO==============*/
 .menu-btn {
@@ -129,10 +243,30 @@ body {
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
- cursor: pointer;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+ width: 126px;
+ height: 48px;
+ 
 }
 .menu-btn:hover,
 .menu-btn:focus {
   background: #404bbf;
   color: #ffffff;
 }
+
+.img-container{
+  width: calc(100%-48px)/3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-bottom: 120px;
+  }
+  .portfolio-name{
+    padding-top: 32px;
+  }
+.portfolio-text{
+  padding-top: 8px;
+}
+
