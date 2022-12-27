@@ -25,8 +25,10 @@ ol {
   margin: 0;
   padding-left: 0;
 }
-img{
+img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 address {
   font-size: normal;
@@ -50,10 +52,10 @@ address {
 body {
   font-family: "Roboto", "sans-serif";
 }
+
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-
   display: flex;
   align-items: center;
   margin-right: auto;
@@ -70,9 +72,9 @@ body {
   line-height: 1.33;
   padding-top: 24px;
   padding-bottom: 24px;
-  padding-right: 77px;
-  margin-right: auto;
+  margin-right: 77px;
 }
+
 .logo-web {
   font-family: "Raleway", "sans-serif";
   font-weight: 800;
@@ -100,6 +102,7 @@ body {
   color: #434455;
   margin-left: 40px;
 }
+
 .navigation {
   font-weight: 600;
   font-size: 16px;
@@ -116,30 +119,28 @@ body {
   color: var(--text-color);
 }
 .background {
-  background: #2E2F42;
+  background: #2e2f42;
   padding-top: 192px;
   padding-bottom: 192px;
-  }
+}
 
+.name-hero {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.07;
+  width: 492px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+}
 
-  
-  .name-hero {
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: 56px;
-    line-height: 1.07;
-    width: 492px;
-    margin: 0 auto;
-    margin-bottom: 48px;
-  } 
- 
 .hero-btn {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-family: "Roboto";
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.19;
@@ -160,39 +161,56 @@ body {
 }
 .adge {
   padding-top: 120px;
+  padding-bottom: 120px;
   display: flex;
   gap: 24px;
 }
+
 .main-name-section {
   font-size: 36px;
   color: var(--text-color);
   line-height: 1.11;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  /*padding-top: 120px;*/
+  margin-bottom: 72px;
   text-align: center;
 }
-.main-name-container {
+
+.container-servis {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.team {
+  background: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+/*.main-name-container {
   display: flex;
   gap: 24px;
   padding-bottom: 120px;
-}
+}*/
 .main-name {
   color: var(--text-color);
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  padding-top: 32px;
-  padding-bottom: 8px;
-
-  /* padding-top: 120px;*/
+  margin-top: 32px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 .main-text {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
-  padding-bottom: 32px;
+  text-align: center;
+  margin-bottom: 32px;
+  /*padding-bottom: 120px;*/
 }
 
+.img-team {
+  min-height: 300px;
+  border: 1px solid #e7e9fc;
+}
 .name-block {
   color: var(--text-color);
   font-weight: 600;
@@ -201,19 +219,21 @@ body {
 }
 .name-block-color {
   background: #f4f4fd;
+  padding-top: 120px;
 }
-/*.list{
+.list {
   display: flex;
   gap: 24px;
-}*/
+}
+.footer-container {
+  padding-left: 156px;
+}
 .footer {
   background: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.logo-footer {
-  padding-left: 156px;
-}
+
 .studio-footer {
   font-family: "Raleway", "sans-serif";
   color: #f4f4fd;
@@ -227,11 +247,10 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 16px;
+  margin-top: 16px;
 }
 .footer-text-container {
   width: 264px;
-  margin-left: 156px;
   outline: 1px solid red;
 }
 /*======================PORTFOLIO==============*/
@@ -245,28 +264,39 @@ body {
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
-  display: block;
- width: 126px;
- height: 48px;
- 
+  padding: 12px 24px;
+  margin-top: 96px;
+  margin-left: 72px;
 }
 .menu-btn:hover,
 .menu-btn:focus {
   background: #404bbf;
   color: #ffffff;
 }
+/*.pf-naim-text {
+  outline: 1px solid red;
+  padding-left: 16px;
+}*/
 
-.img-container{
-  width: calc(100%-48px)/3;
+.img-container {
+  width: calc(100%-48px) / 3;
   display: flex;
   flex-wrap: wrap;
+  row-gap: 48px;
   gap: 24px;
   padding-bottom: 120px;
-  }
-  .portfolio-name{
-    padding-top: 32px;
-  }
-.portfolio-text{
-  padding-top: 8px;
 }
-
+.container-meny-pf {
+  display: flex;
+  gap: 24px;
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
+.portfolio-name {
+  margin-top: 32px;
+}
+.portfolio-text {
+  margin-top: 8px;
+  padding-bottom: 32px;
+}
