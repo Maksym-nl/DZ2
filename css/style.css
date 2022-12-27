@@ -266,7 +266,9 @@ body {
   text-align: center;
   padding: 12px 24px;
   margin-top: 96px;
-  margin-left: 72px;
+  margin-bottom: 72px;
+ 
+
 }
 .menu-btn:hover,
 .menu-btn:focus {
@@ -286,12 +288,14 @@ body {
   gap: 24px;
   padding-bottom: 120px;
 }
+
 .container-meny-pf {
   display: flex;
   gap: 24px;
   text-align: center;
   padding-top: 96px;
   padding-bottom: 72px;
+  margin-left: 156px;
 }
 .portfolio-name {
   margin-top: 32px;
