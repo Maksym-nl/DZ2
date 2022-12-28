@@ -1,8 +1,14 @@
+html{
+  box-sizing: border-box;
+}
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   box-sizing: border-box;
+}
+*, *::after, *::before{
+  box-sizing: inherit;
 }
 .container {
   width: 1158px;
@@ -10,6 +16,7 @@
   padding-right: 15px;
   outline: 1px solid red;
   margin: 0 auto;
+
 }
 p,
 h1,
@@ -60,6 +67,7 @@ body {
   align-items: center;
   margin-right: auto;
 }
+
 .container-header {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -95,7 +103,9 @@ body {
 .menu {
   display: flex;
   gap: 40px;
+  color: var(--text-color)
 }
+
 .contact-list-link {
   list-style: none;
   text-decoration: none;
@@ -220,6 +230,7 @@ body {
 .name-block-color {
   background: #f4f4fd;
   padding-top: 120px;
+  padding-bottom: 120px;
 }
 .list {
   display: flex;
@@ -302,7 +313,7 @@ body {
 }
 .portfolio-text {
   margin-top: 8px;
-  padding-bottom: 32px;
+   padding-bottom: 32px;
 }
 .pf-h3-p{
  padding-bottom: 8px;
