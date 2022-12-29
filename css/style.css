@@ -25,7 +25,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+ margin: 0;
+
 }
 ul,
 ol {
@@ -51,6 +52,7 @@ address {
 }
 .link {
   text-decoration: none;
+  
 }
 :root {
   --accent-color: #4d5ae5;
@@ -63,9 +65,8 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-  display: flex;
-  align-items: center;
-  margin-right: auto;
+  /*display: flex;*/
+ 
 }
 
 .container-header {
@@ -78,8 +79,7 @@ body {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  
   margin-right: 77px;
 }
 
@@ -97,8 +97,7 @@ body {
   font-size: 18px;
   line-height: 1.33;
   color: var(--text-color);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  
 }
 .menu {
   display: flex;
@@ -111,6 +110,7 @@ body {
   text-decoration: none;
   color: #434455;
   margin-left: 40px;
+  outline: 1px solid red;
 }
 
 .navigation {
@@ -120,12 +120,14 @@ body {
   color: var(--text-color);
   letter-spacing: 0.02em;
   margin-right: auto;
+  outline: 1px solid red;
+ /*display: flex;*/
 }
 .link:hover,
 .link:focus {
   color: #4d5ae5;
 }
-.navigation list link {
+.navigation link link {
   color: var(--text-color);
 }
 .background {
@@ -133,7 +135,12 @@ body {
   padding-top: 192px;
   padding-bottom: 192px;
 }
-
+.a-nav{
+  color: #2e2f42;
+  /*display: flex;
+  align-items: center;*/
+ 
+}
 .name-hero {
   color: #ffffff;
   font-weight: 600;
@@ -174,6 +181,7 @@ body {
   padding-bottom: 120px;
   display: flex;
   gap: 24px;
+  outline: 1px solid red;
 }
 
 .main-name-section {
@@ -194,6 +202,14 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.team-h3-p{
+  padding-top: 32px;
+  padding-bottom: 32px;
+  outline: 1px solid red;
+  text-align: center;
+  background: #FFFFFF;
+  
+}
 /*.main-name-container {
   display: flex;
   gap: 24px;
@@ -206,13 +222,13 @@ body {
   line-height: 1.2;
   margin-top: 32px;
   margin-bottom: 8px;
-  text-align: center;
+  /*text-align: center;*/
 }
 .main-text {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
-  text-align: center;
+  /*text-align: center;*/
   margin-bottom: 32px;
   /*padding-bottom: 120px;*/
 }
@@ -231,14 +247,13 @@ body {
   background: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
+  outline: 1px solid red;
 }
 .list {
   display: flex;
   gap: 24px;
 }
-.footer-container {
-  padding-left: 156px;
-}
+
 .footer {
   background: #2e2f42;
   padding-top: 100px;
