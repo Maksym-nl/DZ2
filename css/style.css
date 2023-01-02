@@ -64,6 +64,9 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom:1px solid #E7E9FC;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  
 }
 
 .container-header {
@@ -192,10 +195,10 @@ body {
   text-align: center;
 }
 
-.container-servis {
+/*.container-servis {
   padding-top: 120px;
   padding-bottom: 120px;
-}
+}*/
 .team {
   background: #f4f4fd;
   padding-top: 120px;
@@ -272,6 +275,10 @@ body {
   outline: 1px solid red;
 }
 /*======================PORTFOLIO==============*/
+.main-pf{
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .menu-btn {
   font-weight: 600;
   font-size: 16px;
@@ -291,7 +298,10 @@ body {
 }
 .pf-naim-text {
   outline: 1px solid #f4f4fd;
-  margin-bottom: 32px;
+ 
+}
+.pf-naim-text + .pf-naim-text{
+  margin-top: 48px;
 }
 
 .img-container {
@@ -300,37 +310,35 @@ body {
   flex-wrap: wrap;
   row-gap: 48px;
   gap: 24px;
-  padding-bottom: 120px;
+  /*padding-bottom: 120px;*/
 }
 
 .container-meny-pf {
   display: flex;
   gap: 24px;
   text-align: center;
-  padding-top: 96px;
-  padding-bottom: 72px;
-
+  margin-bottom: 72px;
   justify-content: center;
 }
 .portfolio-name {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-
-  margin-top: 32px;
+  margin-bottom: 8px;
 }
 .portfolio-text {
-  margin-top: 8px;
-  padding-bottom: 32px;
+  /*margin-top: 8px;
+  padding-bottom: 32px;*/
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
 }
 .pf-h3-p {
-  padding-bottom: 8px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-right: 16px;
   padding-left: 16px;
-
   border: 0.5px solid #f4f4fd;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
