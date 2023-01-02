@@ -195,10 +195,10 @@ body {
   text-align: center;
 }
 
-/*.container-servis {
-  padding-top: 120px;
+.container-servis {
+  /*padding-top: 120px;*/
   padding-bottom: 120px;
-}*/
+}
 .team {
   background: #f4f4fd;
   padding-top: 120px;
