@@ -56,6 +56,10 @@ address {
 :root {
   --accent-color: #4d5ae5;
   --text-color: #2e2f42;
+  --bg-gradient: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  );
 }
 body {
   font-family: "Roboto", "sans-serif";
@@ -64,9 +68,9 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
-  border-bottom:1px solid #E7E9FC;
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-  
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .container-header {
@@ -131,9 +135,14 @@ body {
 }
 .background {
   background: #2e2f42;
+  background-image: var(--bg-gradient), url(../img/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding-top: 192px;
   padding-bottom: 192px;
 }
+
 .a-nav {
   color: #2e2f42;
 }
@@ -275,7 +284,7 @@ body {
   outline: 1px solid red;
 }
 /*======================PORTFOLIO==============*/
-.main-pf{
+.main-pf {
   padding-top: 96px;
   padding-bottom: 120px;
 }
@@ -298,7 +307,6 @@ body {
 }
 .pf-naim-text {
   outline: 1px solid #f4f4fd;
- 
 }
 .pf-naim-text + .pf-naim-text {
   margin-top: 48px;
