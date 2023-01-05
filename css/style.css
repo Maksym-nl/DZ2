@@ -70,10 +70,10 @@ body {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.container-header {
+/*.container-header {
   padding-top: 24px;
   padding-bottom: 24px;
-}
+}*/
 .logo {
   font-family: "Raleway", "sans-serif";
   color: var(--text-color);
@@ -367,6 +367,11 @@ body {
   width: 40px;
   height: 40px;
 }
+.footer-item-soc:hover,
+.footer-item-soc:focus {
+  background: #31D0AA;
+  border-radius: 50%;
+}
 
 .footer-link-soc {
   width: 100%;
@@ -375,9 +380,10 @@ body {
   border-radius: 50%;
   display: flex;
   justify-content: center;
-  /*justify-content: flex-start;*/
   align-items: center;
+  
 }
+
 /*======================PORTFOLIO==============*/
 .main-pf {
   padding-top: 96px;
