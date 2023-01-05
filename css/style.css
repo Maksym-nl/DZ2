@@ -56,10 +56,7 @@ address {
 :root {
   --accent-color: #4d5ae5;
   --text-color: #2e2f42;
-  --bg-gradient: linear-gradient(
-    rgba(46, 47, 66, 0.7),
-    rgba(46, 47, 66, 0.7)
-  );
+  --bg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 body {
   font-family: "Roboto", "sans-serif";
@@ -184,16 +181,33 @@ body {
 .adge {
   padding-top: 120px;
   padding-bottom: 120px;
-  display: flex;
-  gap: 24px;
   outline: 1px solid red;
 }
 .adge-list {
   display: flex;
   gap: 24px;
 }
-.adge-li {
-  width: 264px;
+.adg-link {
+  width: 100%;
+  height: 100%;
+  background: #f4f4fd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+}
+.adge-item {
+  width: calc((100%-72px) / 4);
+  /*width: 264px;*/
+  height: 112px;
+  /*margin-bottom: 8px;*/
+}
+.team-container {
+  padding-top: 120px;
+  padding-bottom: 110px;
+  background: #f4f4fd;
 }
 
 .main-name-section {
@@ -205,7 +219,7 @@ body {
 }
 
 .container-servis {
-  /*padding-top: 120px;*/
+  padding-top: 120px;
   padding-bottom: 120px;
 }
 .team {
@@ -218,10 +232,31 @@ body {
   padding-bottom: 32px;
   text-align: center;
   background: #ffffff;
+  /*margin-bottom: 8px;*/
 
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-list-soc {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+.team-item-soc {
+  width: 40px;
+  height: 40px;
+}
+.team-link-soc {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-name {
@@ -229,12 +264,14 @@ body {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
+  /*margin-top: 8px;*/
   margin-bottom: 8px;
 }
 .main-text {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
+  /* margin-bottom: 8px;*/
 }
 
 .img-team {
@@ -257,11 +294,39 @@ body {
   display: flex;
   gap: 24px;
 }
-
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.customers-name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  margin-bottom: 72px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customers-item {
+  width: calc((100%-120px) / 6);
+  height: 88px;
+}
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer {
   background: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
 }
 
 .studio-footer {
@@ -282,6 +347,36 @@ body {
 .footer-text-container {
   width: 264px;
   outline: 1px solid red;
+}
+
+.footer-text-soc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.footer-list-soc {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-item-soc {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-link-soc {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  /*justify-content: flex-start;*/
+  align-items: center;
 }
 /*======================PORTFOLIO==============*/
 .main-pf {
